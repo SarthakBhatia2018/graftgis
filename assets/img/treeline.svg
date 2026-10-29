@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 400" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9805e" stop-opacity=".55"/>
+      <stop offset=".5" stop-color="#3d5873" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#0d1d30" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- far ridge -->
+  <path d="M0 120 C120 100 220 112 340 96 S560 86 700 100 S960 84 1100 98 S1340 88 1440 100 V200 H0Z" fill="#22324a" opacity=".85"/>
+  <!-- river reflection -->
+  <path d="M380 170 C560 150 820 150 1080 168 C1000 200 860 230 760 260 C620 300 520 330 470 400 H330 C360 320 430 260 520 220 C470 205 420 190 380 170Z" fill="url(#water)"/>
+  <!-- near treeline left -->
+  <path d="M0 150 l14 -18 10 14 12 -26 12 20 10 -12 14 22 16 -30 12 24 14 -14 12 18 V400 H0Z
+           M0 160 C80 150 160 170 240 160 C300 154 340 172 380 180 C360 230 300 280 260 400 H0Z" fill="#0f1d2c"/>
+  <!-- near treeline right -->
+  <path d="M1440 140 l-16 -20 -10 16 -14 -28 -12 22 -12 -14 -14 24 -16 -32 -12 26 -14 -16 -12 20 -16 -10 -10 18
+           V400 H1440Z
+           M1080 168 C1160 160 1240 150 1320 150 C1380 150 1420 146 1440 144 V400 H900 C960 320 1030 240 1080 168Z" fill="#0f1d2c"/>
+</svg>
