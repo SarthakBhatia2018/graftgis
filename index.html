@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Graft GIS — Property Intelligence Platform</title>
-  <meta name="description" content="Graft GIS builds one Property Intelligence Record for every parcel — the risk and location facts that matter, in one place, for buyers, realtors and lenders.">
+  <meta name="description" content="Graft GIS builds one Property Intelligence Record for every parcel — what actually flooded, the FEMA zone, and the public-record facts that matter, for agents, investors, MUD districts and lenders.">
   <meta name="theme-color" content="#0b1a30">
   <link rel="icon" type="image/png" href="assets/img/logo-globe.png">
   <meta property="og:title" content="Graft GIS — Where Land Meets Data">
-  <meta property="og:description" content="Understand the property before you buy, sell, or finance it.">
+  <meta property="og:description" content="Disclose the record, not a guess. See what actually flooded before you buy, sell, build, or finance.">
   <meta property="og:image" content="assets/img/graft-gis-logo-full.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -34,10 +34,11 @@
       </button>
 
       <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#demo">Demo</a>
         <a href="#who-its-for">Who It’s For</a>
-        <a href="#flood">Flood</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#mud">MUD Districts</a>
+        <a href="#builders">Builders</a>
+        <a href="#mcp">MCP</a>
         <a href="#contact" class="btn btn-primary btn-sm js-request">Request Access</a>
       </nav>
     </div>
@@ -69,15 +70,15 @@
         <div class="hero-copy">
           <p class="eyebrow eyebrow-light">Property Intelligence Platform</p>
           <h1>Understand the<br class="br-lg"> property before you<br class="br-lg"> <span class="text-green">buy, sell, or finance&nbsp;it.</span></h1>
-          <p class="hero-lead">Graft GIS builds one Property Intelligence Record for every parcel — the risk and location facts that matter, in one place, for everyone at the table.</p>
+          <p class="hero-lead">Graft GIS builds one Property Intelligence Record for every parcel — what actually flooded, the FEMA zone, and the public-record facts that matter. History, not a modeled score, so everyone at the table works from the same record.</p>
           <div class="hero-actions">
             <a href="#contact" class="btn btn-primary btn-lg js-request">
               Request early access
               <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
-            <a href="#how-it-works" class="btn btn-outline-light btn-lg">
+            <a href="#demo" class="btn btn-outline-light btn-lg">
               <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#fff"/><path d="M10 8l6 4-6 4z" fill="#0b1a30"/></svg>
-              See how it works
+              See what actually flooded
             </a>
           </div>
         </div>
@@ -87,7 +88,7 @@
           <div class="record-aerial">
             <div class="record-parcel">
               <span class="record-parcel-label">Parcel ID</span>
-              <span class="record-parcel-input">123-45-6789</span>
+              <span class="record-parcel-input">071-234-000-0012</span>
             </div>
           </div>
           <div class="record-body">
@@ -95,38 +96,32 @@
               <div>
                 <p class="eyebrow eyebrow-sm">Property Intelligence Record</p>
                 <h2 class="record-address">1234 Oak Ridge Drive</h2>
-                <p class="record-city">Fairfax, VA 22030</p>
+                <p class="record-city">Houston, TX 77096</p>
               </div>
               <img src="assets/img/house.png" alt="Front of 1234 Oak Ridge Drive" class="record-house" width="104" height="66">
             </div>
 
             <div class="record-grid">
-              <div class="record-tile">
+              <div class="record-tile record-tile-wide">
                 <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 7c2-1.6 4-1.6 6 0s4 1.6 6 0 4-1.6 6 0"/><path d="M2 12c2-1.6 4-1.6 6 0s4 1.6 6 0 4-1.6 6 0"/><path d="M2 17c2-1.6 4-1.6 6 0s4 1.6 6 0 4-1.6 6 0"/></svg>
                 <div>
-                  <span class="tile-label">Flood zone</span>
+                  <span class="tile-label">Flood history</span>
+                  <span class="tile-value">Harvey inundation <svg class="i-info" viewBox="0 0 24 24" aria-label="Inside the recorded Hurricane Harvey (2017) inundation boundary" role="img"><title>Inside the recorded Hurricane Harvey (2017) inundation boundary</title><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span>
+                  <span class="tile-note">Actual event boundaries · HCFCD</span>
+                </div>
+              </div>
+              <div class="record-tile">
+                <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+                <div>
+                  <span class="tile-label">FEMA zone</span>
                   <span class="tile-value">AE <svg class="i-info" viewBox="0 0 24 24" aria-label="FEMA Special Flood Hazard Area with base flood elevation" role="img"><title>FEMA Special Flood Hazard Area with base flood elevation</title><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span>
-                </div>
-              </div>
-              <div class="record-tile">
-                <svg class="tile-icon tile-icon-red" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M12 8v5M12 16h.01"/></svg>
-                <div>
-                  <span class="tile-label">Flood risk</span>
-                  <span class="tile-value">High <svg class="i-info" viewBox="0 0 24 24" aria-label="Relative flood risk for this parcel" role="img"><title>Relative flood risk for this parcel</title><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span>
-                </div>
-              </div>
-              <div class="record-tile">
-                <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V14M9 20V10M14 20v-7M19 20V6"/><path d="M3 20h18"/><path d="M4 10l5-4 5 3 6-5"/></svg>
-                <div>
-                  <span class="tile-label">Insurance outlook</span>
-                  <span class="tile-value">Higher Risk</span>
                 </div>
               </div>
               <div class="record-tile">
                 <svg class="tile-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><path d="M15.5 4.8a3.5 3.5 0 0 1 0 6.4M17.5 14.3c2.4.6 4 2.7 4 5.7"/></svg>
                 <div>
-                  <span class="tile-label">View</span>
-                  <span class="tile-value tile-value-sm">Buyer · Realtor · Lender</span>
+                  <span class="tile-label">Shared with</span>
+                  <span class="tile-value tile-value-sm">Agent · Buyer · Lender</span>
                 </div>
               </div>
             </div>
@@ -135,35 +130,91 @@
       </div>
     </section>
 
-    <!-- ============ ONE RECORD, THREE VIEWS ============ -->
+    <!-- ============ SOURCES ============ -->
+    <section class="sources" aria-labelledby="sources-title">
+      <div class="container sources-inner">
+        <p class="sources-title" id="sources-title">Built on the public record</p>
+        <ul class="sources-list">
+          <li><strong>FEMA</strong><span>National Flood Hazard Layer</span></li>
+          <li><strong>HCFCD</strong><span>Harvey inundation boundaries</span></li>
+          <li><strong>NOAA</strong><span>SLOSH storm surge scenarios</span></li>
+          <li><strong>TCEQ</strong><span>Environmental site records</span></li>
+        </ul>
+        <a href="legal.html#data" class="sources-link">Sources &amp; disclaimers</a>
+      </div>
+    </section>
+
+    <!-- ============ HOUSTON DEMO MAP ============ -->
+    <section class="section demo" id="demo">
+      <div class="container">
+        <div class="demo-head">
+          <div>
+            <p class="eyebrow">Houston demo</p>
+            <h2 class="section-title">The FEMA zone is the map. Harvey was the event.</h2>
+          </div>
+          <p class="demo-lead">Flip the toggle. Homes outside the regulatory floodplain still took water in 2017 — and that’s exactly what a buyer asks about. We disclose what actually flooded, never a prediction.</p>
+        </div>
+
+        <div class="demo-card">
+          <div class="demo-toolbar">
+            <div class="toggle" role="group" aria-label="Map layer">
+              <button type="button" class="toggle-btn" data-layer="fema" aria-pressed="false">FEMA flood zone</button>
+              <button type="button" class="toggle-btn" data-layer="harvey" aria-pressed="true">What actually flooded</button>
+            </div>
+            <p class="demo-stat" id="demo-stat" aria-live="polite"></p>
+          </div>
+
+          <div class="demo-body">
+            <svg class="demo-map" id="demo-map" viewBox="0 0 640 400" role="img" aria-label="Illustrative Houston neighborhood map showing FEMA flood zone and Harvey inundation by parcel"></svg>
+
+            <aside class="demo-side">
+              <div class="demo-readout" id="demo-readout" aria-live="polite">
+                <p class="eyebrow eyebrow-sm">Parcel record</p>
+                <p class="demo-readout-empty">Select a parcel on the map to see its record.</p>
+              </div>
+              <ul class="demo-legend" id="demo-legend"></ul>
+            </aside>
+          </div>
+          <p class="demo-note">Illustrative demo. Live records use FEMA National Flood Hazard Layer zones and HCFCD-published Harvey inundation boundaries.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHO IT'S FOR ============ -->
     <section class="section views" id="who-its-for">
       <div class="container">
-        <p class="eyebrow">One record, three views</p>
-        <h2 class="section-title">The same facts, framed for the decision you’re making.</h2>
+        <p class="eyebrow">One record, every party at the table</p>
+        <h2 class="section-title">Nobody disputes the record. Everybody gains from it.</h2>
 
         <div class="views-grid">
           <article class="view-card">
             <span class="view-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 9.5V20h14V9.5"/><path d="M10 20v-6h4v6"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
             </span>
-            <h3>Home buyers</h3>
-            <p>Know what you’re getting into before you make an offer — in plain language, not GIS jargon.</p>
+            <h3>Agents</h3>
+            <p>Control the flood conversation with what actually happened — not a modeled score a buyer finds on a listing site and you have to argue with.</p>
           </article>
           <article class="view-card">
             <span class="view-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M4 20V14M9 20V10M14 20v-7M19 20V6"/><path d="M3 20h18"/></svg>
             </span>
-            <h3>Realtors</h3>
-            <p>Answer risk questions up front and share a clean, credible record with clients on every listing.</p>
+            <h3>Investors</h3>
+            <p>Flood history and federal program eligibility for a parcel in one lookup. <a href="#programs" class="text-link">See programs</a></p>
           </article>
           <article class="view-card">
             <span class="view-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M3 9l9-5 9 5"/><path d="M4 9h16"/><path d="M6 9v9M10 9v9M14 9v9M18 9v9"/><path d="M3 20h18"/></svg>
             </span>
             <h3>Lenders</h3>
-            <p>Screen collateral risk per parcel with consistent, location-based data you can review fast.</p>
+            <p>Review collateral against recorded flood events and FEMA zones, with every source cited and dated.</p>
           </article>
         </div>
+
+        <p class="views-more">Also built for
+          <a href="#mud">MUD districts</a>
+          <a href="#builders">Builders &amp; new construction</a>
+          <a href="#mcp">AI &amp; MCP users</a>
+        </p>
       </div>
     </section>
 
@@ -172,17 +223,17 @@
       <div class="container flood-inner">
         <div class="flood-copy">
           <p class="eyebrow">Starting with flood</p>
-          <h2 class="section-title">Flood is the first module. More risk layers follow.</h2>
-          <p class="flood-lead">Flood is the risk that surprises people most at closing. We start there, then add modules to the same record over time.</p>
+          <h2 class="section-title">Flood history is the first module. More public-record layers follow.</h2>
+          <p class="flood-lead">Flood is what surprises people most at closing. We start with what actually flooded — recorded event boundaries, not a modeled score — then add layers to the same record over time.</p>
 
-          <ul class="modules" aria-label="Risk modules">
+          <ul class="modules" aria-label="Record modules">
             <li class="module is-active">
               <span class="module-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8c1.5-1.3 3-1.3 4.5 0s3 1.3 4.5 0 3-1.3 4.5 0 3 1.3 4.5 0"/><path d="M3 12.5c1.5-1.3 3-1.3 4.5 0s3 1.3 4.5 0 3-1.3 4.5 0 3 1.3 4.5 0"/><path d="M3 17c1.5-1.3 3-1.3 4.5 0s3 1.3 4.5 0 3-1.3 4.5 0 3 1.3 4.5 0"/></svg></span>
               <span class="module-label">Flood</span>
             </li>
             <li class="module" title="Coming soon">
-              <span class="module-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 7.5c2 .5 2.5 2 4 2s1.5 2 3 2.5 1 2.5-.5 3.5M14 4c-.5 1.5 0 2.5 1.5 3s2.5 1.5 2 3.5M5 14.5c1.5-.3 2.5.3 3 1.5"/></svg></span>
-              <span class="module-label">Climate</span>
+              <span class="module-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v4h4"/><path d="M12 7v5l3 2"/></svg></span>
+              <span class="module-label">Storm history</span>
             </li>
             <li class="module" title="Coming soon">
               <span class="module-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M8 17v-5M12 17V8M16 17v-3"/></svg></span>
@@ -214,28 +265,204 @@
           <li class="step">
             <span class="step-num">02</span>
             <div>
-              <h3>See the flood picture</h3>
-              <p>Mapped flood and climate risk data for the parcel, summarized clearly.</p>
+              <h3>See what actually flooded</h3>
+              <p>Recorded event boundaries and the FEMA zone for the parcel, each with its source.</p>
             </div>
           </li>
           <li class="step">
             <span class="step-num">03</span>
             <div>
-              <h3>Share the right view</h3>
-              <p>Hand buyers, agents and lenders the version built for them.</p>
+              <h3>Share the record</h3>
+              <p>Hand clients a branded report built on the same facts everyone sees.</p>
             </div>
           </li>
         </ol>
 
-        <figure class="flood-map" aria-label="Flood risk map of a parcel">
-          <img src="assets/img/flood-map.png" alt="Aerial map with a highlighted parcel and shaded flood risk zones along the river" width="223" height="255">
+        <figure class="flood-map" aria-label="Flood record map of a parcel">
+          <img src="assets/img/flood-map.png" alt="Aerial map with a highlighted parcel and shaded flood record layers along the bayou" width="223" height="255">
           <figcaption class="map-legend">
-            <strong>Flood Risk</strong>
-            <span><i class="sw sw-high"></i>High</span>
-            <span><i class="sw sw-mod"></i>Moderate</span>
-            <span><i class="sw sw-low"></i>Low</span>
+            <strong>Flood record</strong>
+            <span><i class="sw sw-high"></i>Harvey</span>
+            <span><i class="sw sw-mod"></i>Zone AE</span>
+            <span><i class="sw sw-low"></i>Zone X</span>
           </figcaption>
         </figure>
+      </div>
+    </section>
+
+    <!-- ============ MUD DISTRICTS ============ -->
+    <section class="section persona" id="mud">
+      <div class="container persona-inner">
+        <div class="persona-copy">
+          <p class="eyebrow">For MUD districts</p>
+          <h2 class="section-title">Give your board the district’s flood record, parcel by parcel.</h2>
+          <p class="persona-lead">Municipal Utility District boards answer for drainage, detention and growth — usually with consultant PDFs and county maps that don’t line up. Graft GIS puts every parcel in the district on one sourced record.</p>
+          <ul class="checklist">
+            <li><strong>District-wide flood history.</strong> Every parcel inside your boundary checked against Harvey inundation and FEMA zones.</li>
+            <li><strong>Board-ready exhibits.</strong> Sourced, dated reports for meetings, engineers and bond disclosures.</li>
+            <li><strong>Resident questions, answered.</strong> Homeowners and agents see the same record your board does.</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary js-request" data-role="MUD administrator">Talk to us about your district</a>
+        </div>
+
+        <div class="panel" aria-label="Sample MUD district summary">
+          <div class="panel-head">
+            <p class="eyebrow eyebrow-sm">District summary · sample</p>
+            <h3>Sample MUD No. 000</h3>
+          </div>
+          <dl class="panel-stats">
+            <div><dt>Parcels in district</dt><dd>2,480</dd></div>
+            <div><dt>In FEMA Zone AE</dt><dd>212</dd></div>
+            <div><dt>Inside Harvey inundation</dt><dd>604</dd></div>
+            <div><dt>Flooded outside Zone AE</dt><dd class="dd-accent">431</dd></div>
+          </dl>
+          <p class="panel-note">Illustrative figures. Your district report is built from your boundary file.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BUILDERS ============ -->
+    <section class="section persona persona-alt" id="builders">
+      <div class="container persona-inner persona-inner-flip">
+        <div class="persona-copy">
+          <p class="eyebrow">For builders &amp; new construction</p>
+          <h2 class="section-title">Document due diligence before the slab is poured.</h2>
+          <p class="persona-lead">New-construction buyers ask about lots that have no sales history and no prior disclosures. Give them a documented, pre-close record of the ground itself.</p>
+          <ul class="checklist">
+            <li><strong>FEMA zone and base flood elevation</strong> for the lot, from the current effective map.</li>
+            <li><strong>Recorded flood history</strong> for the land before the subdivision existed.</li>
+            <li><strong>Storm surge scenario</strong> from NOAA SLOSH, by hurricane category, for coastal lots.</li>
+            <li><strong>Nearby environmental records</strong> from TCEQ.</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary js-request" data-role="New construction agent">Get a sample lot report</a>
+        </div>
+
+        <div class="panel" aria-label="Sample storm surge scenario for a lot">
+          <div class="panel-head">
+            <p class="eyebrow eyebrow-sm">Storm surge scenario · sample lot</p>
+            <h3>Lot 14, Block 3</h3>
+          </div>
+          <ol class="surge">
+            <li><span class="surge-cat">Cat 1</span><span class="surge-bar"><i style="--d:0"></i></span><span class="surge-val">Dry</span></li>
+            <li><span class="surge-cat">Cat 2</span><span class="surge-bar"><i style="--d:0"></i></span><span class="surge-val">Dry</span></li>
+            <li><span class="surge-cat">Cat 3</span><span class="surge-bar"><i style="--d:.15"></i></span><span class="surge-val">Up to 1 ft</span></li>
+            <li><span class="surge-cat">Cat 4</span><span class="surge-bar"><i style="--d:.5"></i></span><span class="surge-val">Up to 3 ft</span></li>
+            <li><span class="surge-cat">Cat 5</span><span class="surge-bar"><i style="--d:.9"></i></span><span class="surge-val">Up to 6 ft</span></li>
+          </ol>
+          <p class="panel-note">NOAA SLOSH maximum-of-maximums, high tide. A planning scenario — not a forecast, and not for insurance rating. Illustrative values.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEDERAL PROGRAMS ============ -->
+    <section class="section programs" id="programs">
+      <div class="container">
+        <div class="programs-head">
+          <div>
+            <p class="eyebrow">For investors</p>
+            <h2 class="section-title">One lookup instead of four government sites.</h2>
+          </div>
+          <p class="programs-lead">Federal program eligibility sits on the same parcel record as its flood history.</p>
+        </div>
+        <ul class="programs-grid">
+          <li class="program">
+            <span class="program-tag">OZ</span>
+            <h3>Opportunity Zones</h3>
+            <p>Whether the parcel’s census tract is a designated Qualified Opportunity Zone.</p>
+          </li>
+          <li class="program">
+            <span class="program-tag">USDA</span>
+            <h3>USDA Rural Development</h3>
+            <p>Property eligibility for USDA single-family and multifamily housing programs.</p>
+          </li>
+          <li class="program">
+            <span class="program-tag">HUBZone</span>
+            <h3>HUBZone</h3>
+            <p>Whether the location qualifies under SBA’s Historically Underutilized Business Zones.</p>
+          </li>
+          <li class="program">
+            <span class="program-tag">SBA</span>
+            <h3>SBA disaster areas</h3>
+            <p>Declared disaster areas covering the parcel, for SBA disaster loan context.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ BRANDED REPORT ============ -->
+    <section class="section report" id="report">
+      <div class="container report-inner">
+        <div class="report-preview" aria-label="Sample branded report page">
+          <div class="paper">
+            <div class="paper-brand">
+              <span class="paper-logo" aria-hidden="true">BC</span>
+              <span>
+                <strong>Jordan Reyes</strong>
+                <small>Bayou City Realty · (713) 555-0142</small>
+              </span>
+            </div>
+            <p class="paper-kicker">Property Record</p>
+            <p class="paper-address">1234 Oak Ridge Drive, Houston, TX 77096</p>
+            <dl class="paper-facts">
+              <div><dt>Flood history</dt><dd>Harvey inundation (2017)</dd></div>
+              <div><dt>FEMA zone</dt><dd>AE</dd></div>
+              <div><dt>Source</dt><dd>HCFCD, FEMA NFHL</dd></div>
+            </dl>
+            <span class="paper-lines" aria-hidden="true"><i></i><i></i><i></i></span>
+            <div class="paper-footer">
+              <img src="assets/img/qr-report.svg" alt="QR code linking to graftgis.com" width="44" height="44">
+              <span>Powered by <strong>Graft GIS</strong><small>Scan to look up any parcel</small></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="report-copy">
+          <p class="eyebrow">Branded reports</p>
+          <h2 class="section-title">Your brand on top. The record underneath.</h2>
+          <p class="persona-lead">Every record exports as a one-page PDF with your name, logo and contact details. A “Powered by Graft GIS” footer and QR code let anyone who receives it look up the next parcel.</p>
+          <ul class="checklist">
+            <li><strong>Client-ready.</strong> Plain-language facts with every source cited.</li>
+            <li><strong>Consistent.</strong> The buyer, the lender and the other agent see the same record.</li>
+          </ul>
+          <a href="assets/sample-report.pdf" class="btn btn-outline-dark" target="_blank" rel="noopener">
+            View sample PDF
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MCP ============ -->
+    <section class="section mcp" id="mcp">
+      <div class="container mcp-inner">
+        <div class="mcp-copy">
+          <p class="eyebrow eyebrow-green">MCP server</p>
+          <h2>Ask your AI assistant. It pulls the record.</h2>
+          <p>Already working in Claude, ChatGPT or another AI tool? Graft GIS connects through the Model Context Protocol, so your assistant can look up a parcel’s record and cite its sources without you leaving the conversation.</p>
+          <a href="#contact" class="btn btn-primary js-request" data-role="Agent">Request MCP access</a>
+        </div>
+
+        <div class="terminal" aria-label="Example MCP query">
+          <div class="terminal-bar">
+            <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span>Example query</span>
+            <button type="button" class="terminal-run" id="mcp-run">Run again</button>
+          </div>
+          <div class="terminal-body" id="mcp-body">
+            <div class="msg msg-user">What’s the flood history for 1234 Oak Ridge Dr, Houston 77096? I need a note for my buyer.</div>
+            <div class="msg msg-tool"><span class="tool-name">graftgis.get_parcel_record</span><code>{ "address": "1234 Oak Ridge Dr, Houston, TX 77096" }</code></div>
+            <pre class="msg msg-json"><code>{
+  "parcel_id": "071-234-000-0012",
+  "fema_zone": "AE",
+  "flood_history": [
+    { "event": "Hurricane Harvey", "year": 2017,
+      "inundated": true, "source": "HCFCD" }
+  ],
+  "sources": ["FEMA NFHL", "HCFCD"]
+}</code></pre>
+            <div class="msg msg-assistant">This parcel sits in FEMA Zone AE and falls inside the recorded Hurricane Harvey (2017) inundation boundary published by HCFCD. Suggested note: “Public records show this property is in a FEMA Special Flood Hazard Area and within the area that flooded during Hurricane Harvey.”</div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -246,7 +473,7 @@
         <div class="cta-copy">
           <p class="eyebrow eyebrow-green">Launching in Virginia &amp; Texas</p>
           <h2>Get early access<br> in your market.</h2>
-          <p>We’re onboarding our first buyers, agents and lenders in Virginia and Texas. Tell us who you are and we’ll be in touch.</p>
+          <p>We’re onboarding our first agents, investors, MUD districts and lenders in Virginia and Texas. Tell us who you are and we’ll be in touch.</p>
         </div>
 
         <div class="form-card">
@@ -263,8 +490,10 @@
               <label for="role">I am a...</label>
               <div class="select-wrap">
                 <select id="role" name="role">
-                  <option value="Home buyer">Home buyer</option>
-                  <option value="Realtor">Realtor</option>
+                  <option value="Agent">Agent</option>
+                  <option value="New construction agent">New construction agent</option>
+                  <option value="Investor">Investor</option>
+                  <option value="MUD administrator">MUD administrator</option>
                   <option value="Lender">Lender</option>
                   <option value="Other">Other</option>
                 </select>
@@ -276,6 +505,7 @@
               <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </button>
             <p class="form-alt">Or email <a href="mailto:hello@graftgis.com">hello@graftgis.com</a></p>
+            <p class="form-legal">By submitting you agree to our <a href="legal.html#privacy">Privacy Policy</a>.</p>
           </form>
 
           <div class="form-success" id="form-success" hidden tabindex="-1">
@@ -300,9 +530,11 @@
       </a>
 
       <nav class="footer-nav" aria-label="Footer">
+        <a href="#demo">Demo</a>
         <a href="#who-its-for">Who It’s For</a>
-        <a href="#flood">Flood</a>
-        <a href="#about">About</a>
+        <a href="#mud">MUD Districts</a>
+        <a href="#builders">Builders</a>
+        <a href="#mcp">MCP</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -318,6 +550,15 @@
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.953 4.57a10 10 0 0 1-2.825.775 4.958 4.958 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 0 0-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 0 0-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 0 1-2.228-.616v.06a4.923 4.923 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.212.085 4.936 4.936 0 0 0 4.604 3.417 9.867 9.867 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0 0 24 4.59z"/></svg>
         </a>
       </div>
+    </div>
+
+    <div class="container footer-legal">
+      <p class="footer-attribution">Flood zones: FEMA National Flood Hazard Layer. Harvey inundation: Harris County Flood Control District. Storm surge: NOAA National Hurricane Center SLOSH. Environmental records: Texas Commission on Environmental Quality. Graft GIS is not affiliated with or endorsed by these agencies. Records describe past events and published designations; they are not predictions, flood determinations, or insurance ratings.</p>
+      <nav class="footer-legal-nav" aria-label="Legal">
+        <a href="legal.html#terms">Terms</a>
+        <a href="legal.html#privacy">Privacy</a>
+        <a href="legal.html#data">Data sources &amp; disclaimers</a>
+      </nav>
     </div>
   </footer>
 

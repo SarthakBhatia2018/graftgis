@@ -1,0 +1,103 @@
+<!doctype html>
+<!-- Source for assets/sample-report.pdf. Regenerate with:
+     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --no-pdf-header-footer \
+       --print-to-pdf=assets/sample-report.pdf assets/sample-report.html -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Property Record — 1234 Oak Ridge Drive (Sample)</title>
+  <style>
+    @page { size: letter; margin: 0; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: #0d1b2e; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .page { width: 8.5in; height: 11in; padding: .6in .65in .5in; display: flex; flex-direction: column; position: relative; }
+    .sample { position: absolute; top: .22in; right: .65in; font-size: 9px; letter-spacing: .14em; text-transform: uppercase; color: #8a96a8; }
+
+    .brand { display: flex; align-items: center; gap: 14px; padding-bottom: 16px; border-bottom: 3px solid #8a1f3a; }
+    .logo { width: 54px; height: 54px; border-radius: 8px; background: #8a1f3a; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 20px; }
+    .agent strong { display: block; font-size: 18px; }
+    .agent span { display: block; font-size: 12px; color: #5f6d80; margin-top: 2px; }
+    .brand-right { margin-left: auto; text-align: right; font-size: 11px; color: #5f6d80; line-height: 1.5; }
+
+    .kicker { margin: 28px 0 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: #0856c4; }
+    h1 { margin: 0; font-size: 28px; }
+    .sub { font-size: 13px; color: #5f6d80; margin-top: 4px; }
+
+    .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 24px 0; }
+    .fact { background: #f4f6f9; border-radius: 8px; padding: 14px 16px; }
+    .fact.wide { grid-column: 1 / -1; border-left: 4px solid #1061d6; }
+    .fact dt { font-size: 11px; color: #5f6d80; text-transform: uppercase; letter-spacing: .08em; }
+    .fact dd { margin: 6px 0 0; font-size: 18px; font-weight: 700; }
+    .fact small { display: block; font-size: 11.5px; font-weight: 400; color: #3b4a5e; margin-top: 4px; }
+
+    h2 { font-size: 14px; margin: 18px 0 8px; }
+    p { font-size: 12.5px; line-height: 1.6; color: #3b4a5e; margin: 0 0 8px; }
+    table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+    th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid #e3e8ef; vertical-align: top; }
+    th { font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: #5f6d80; }
+
+    .disclaimer { margin-top: 14px; font-size: 9.5px; line-height: 1.5; color: #5f6d80; }
+
+    .footer { margin-top: auto; display: flex; align-items: center; gap: 16px; padding-top: 14px; border-top: 1px solid #e3e8ef; }
+    .footer img { width: 78px; height: 78px; }
+    .footer .powered { font-size: 13px; }
+    .footer .powered strong { font-size: 15px; }
+    .footer .powered span { display: block; font-size: 11px; color: #5f6d80; margin-top: 3px; }
+    .footer .globe { margin-left: auto; display: flex; align-items: center; gap: 8px; font-size: 11px; color: #5f6d80; }
+    .footer .globe img { width: 32px; height: 32px; border-radius: 50%; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <span class="sample">Sample report · illustrative data</span>
+
+    <div class="brand">
+      <div class="logo">BC</div>
+      <div class="agent">
+        <strong>Jordan Reyes</strong>
+        <span>Bayou City Realty</span>
+      </div>
+      <div class="brand-right">(713) 555-0142<br>jordan@example.com<br>Prepared November 2, 2026</div>
+    </div>
+
+    <p class="kicker">Property Record</p>
+    <h1>1234 Oak Ridge Drive</h1>
+    <p class="sub">Houston, TX 77096 · Parcel 071-234-000-0012</p>
+
+    <dl class="facts">
+      <div class="fact wide">
+        <dt>Flood history</dt>
+        <dd>Inside the Hurricane Harvey (2017) inundation boundary<small>Actual event boundaries published by the Harris County Flood Control District.</small></dd>
+      </div>
+      <div class="fact">
+        <dt>FEMA zone</dt>
+        <dd>AE<small>Special Flood Hazard Area with base flood elevation.</small></dd>
+      </div>
+      <div class="fact">
+        <dt>Base flood elevation</dt>
+        <dd>52 ft (NAVD 88)<small>From the effective Flood Insurance Rate Map.</small></dd>
+      </div>
+    </dl>
+
+    <h2>What this means</h2>
+    <p>Public records show this property is in a FEMA Special Flood Hazard Area and within the area that flooded during Hurricane Harvey in 2017. These are records of a published designation and a past event. They are not a prediction of future flooding.</p>
+
+    <h2>Sources</h2>
+    <table>
+      <thead><tr><th>Fact</th><th>Source</th><th>Data date</th></tr></thead>
+      <tbody>
+        <tr><td>Flood history</td><td>Harris County Flood Control District — Hurricane Harvey inundation boundaries</td><td>2018</td></tr>
+        <tr><td>FEMA zone, base flood elevation</td><td>FEMA National Flood Hazard Layer</td><td>Effective map, 2026</td></tr>
+      </tbody>
+    </table>
+
+    <p class="disclaimer">Sample report with illustrative data; it does not describe a real property. This report is not a flood zone determination, elevation certificate, survey, or insurance rating, and does not predict future flooding. This product uses FEMA and HCFCD data but is not endorsed or certified by either agency. See graftgis.com/legal.html#data.</p>
+
+    <div class="footer">
+      <img src="img/qr-report.svg" alt="">
+      <div class="powered">Powered by <strong>Graft GIS</strong><span>Scan to look up any parcel · graftgis.com</span></div>
+      <div class="globe"><img src="img/logo-globe.png" alt="">Where land meets data</div>
+    </div>
+  </div>
+</body>
+</html>
