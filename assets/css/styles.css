@@ -599,9 +599,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .footer-nav a:hover, .footer-meta a:hover { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
 .footer-meta { display: flex; align-items: center; gap: 18px; font-size: 12.5px; }
 .footer-divider { width: 1px; height: 26px; background: rgba(255, 255, 255, .3); }
-.social svg { width: 18px; height: 18px; fill: #fff; }
-.social:hover { opacity: .8; }
-.social + .social { margin-left: -4px; }
 
 /* ---------- Record card: wide tile ---------- */
 .record-tile-wide { grid-column: 1 / -1; }
